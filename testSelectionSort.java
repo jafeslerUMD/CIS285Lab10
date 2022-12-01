@@ -44,13 +44,63 @@ public class testSelectionSort {
     
 	@Test
     public void testMixed(){
+		
+		int length = 5;
         
-        /** Test data contains with both positive, negative and zeros **/
+        /** Test data contains with both positive, negative and zeros **/		
+        int[] arr = new int[length];
+        arr[0] = 0;
+        arr[1] = 9;
+        arr[2] = -7;
+        arr[3] = 10;
+        arr[4] = -2;
+        
+        int[] expectedSortedArr = new int[5];
+        
+        expectedSortedArr[4] = -7;
+        expectedSortedArr[3] = -2;
+        expectedSortedArr[2] = 0;
+        expectedSortedArr[1] = 9;
+        expectedSortedArr[0] = 10;
+        
+        SelectionSort selectionSort = new SelectionSort();
+        
+        int[] sortedArr = selectionSort.basicSelectionSort(arr);
+        
+        for(int i = 0; i < length; i++)
+        {
+        	assertSame("Test of mixed has failed at index: " + i, expectedSortedArr[i], sortedArr[i]);
+        }
     }
     
 	@Test
     public void testDuplicates(){
         
-        /** Test data contains duplicates **/
+		int length = 5;
+		
+        /** Test data contains duplicates **/        
+		int[] arr = new int[length];
+        arr[0] = 0;
+        arr[1] = 0;
+        arr[2] = -7;
+        arr[3] = 10;
+        arr[4] = 10;
+        
+        int[] expectedSortedArr = new int[length];
+        
+        expectedSortedArr[4] = -7;
+        expectedSortedArr[3] = 0;
+        expectedSortedArr[2] = 0;
+        expectedSortedArr[1] = 10;
+        expectedSortedArr[0] = 10;
+        
+        SelectionSort selectionSort = new SelectionSort();
+        
+        int[] sortedArr = selectionSort.basicSelectionSort(arr);
+        
+        for(int i = 0; i < length; i++)
+        {
+        	assertSame("Test of duplicates failed has failed at index: " + i, expectedSortedArr[i], sortedArr[i]);
+        }
     }
 }
