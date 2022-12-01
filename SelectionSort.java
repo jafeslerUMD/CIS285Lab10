@@ -11,7 +11,7 @@ public class SelectionSort {
      * special conditions:
      */    
     public int[] basicSelectionSort(int[] x) {
-        for (int i = 0; i < x.length; ++i) {
+        for (int i = 0; i < x.length - 1; ++i) {
         	
         	int minimumIndex = i;
         	

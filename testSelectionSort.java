@@ -51,11 +51,11 @@ public class testSelectionSort {
         
         int[] expectedSortedArr = new int[length];
         
-        expectedSortedArr[4] = -10;
-        expectedSortedArr[3] = -9;
+        expectedSortedArr[0] = -10;
+        expectedSortedArr[1] = -9;
         expectedSortedArr[2] = -8;
-        expectedSortedArr[1] = -7;
-        expectedSortedArr[0] = -2;
+        expectedSortedArr[3] = -7;
+        expectedSortedArr[4] = -2;
         
         SelectionSort selectionSort = new SelectionSort();
         
