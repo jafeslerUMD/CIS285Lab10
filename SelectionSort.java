@@ -16,7 +16,7 @@ public class SelectionSort {
         	int minimumIndex = i;
         	
             for (int j= i+1; j < x.length; ++j) {            	           	
-                if (x[minimumIndex] > x[j]) {
+                if (x[minimumIndex] >= x[j]) {
                 	minimumIndex = j;               	
                 }
             } // end of inner for loop
