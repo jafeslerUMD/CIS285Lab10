@@ -57,11 +57,11 @@ public class testSelectionSort {
         
         int[] expectedSortedArr = new int[5];
         
-        expectedSortedArr[4] = -7;
-        expectedSortedArr[3] = -2;
+        expectedSortedArr[0] = -7;
+        expectedSortedArr[1] = -2;
         expectedSortedArr[2] = 0;
-        expectedSortedArr[1] = 9;
-        expectedSortedArr[0] = 10;
+        expectedSortedArr[3] = 9;
+        expectedSortedArr[4] = 10;
         
         SelectionSort selectionSort = new SelectionSort();
         
@@ -88,11 +88,11 @@ public class testSelectionSort {
         
         int[] expectedSortedArr = new int[length];
         
-        expectedSortedArr[4] = -7;
-        expectedSortedArr[3] = 0;
+        expectedSortedArr[0] = -7;
+        expectedSortedArr[1] = 0;
         expectedSortedArr[2] = 0;
-        expectedSortedArr[1] = 10;
-        expectedSortedArr[0] = 10;
+        expectedSortedArr[3] = 10;
+        expectedSortedArr[4] = 10;
         
         SelectionSort selectionSort = new SelectionSort();
         
